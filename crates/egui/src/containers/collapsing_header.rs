@@ -436,6 +436,20 @@ impl CollapsingHeader {
         self
     }
 
+    /// Should the [`CollapsingHeader`] be selectable? Default: `false`.
+    #[inline]
+    pub fn selectable(mut self, selectable: bool) -> Self {
+        self.selectable = selectable;
+        self
+    }
+
+    /// Should the [`CollapsingHeader`] be selected? Default: `false`.
+    #[inline]
+    pub fn selected(mut self, selected: bool) -> Self {
+        self.selected = selected;
+        self
+    }
+
     /// Should the [`CollapsingHeader`] show a background behind it? Default: `false`.
     ///
     /// To show it behind all [`CollapsingHeader`] you can just use:
